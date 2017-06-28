@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical">
+
+    <CheckBox
+        android:id="@+id/ck_chose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:button="@drawable/check_box_style"
+        android:scaleX="0.6"
+        android:scaleY="0.6" />
+
+    <ImageView
+        android:id="@+id/iv_show_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/ck_chose"
+        android:background="@mipmap/demo" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/iv_show_pic"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_commodity_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="酒红色纯红色纯羊毛西服套装"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+
+      <com.example.shoppingcart.AmountView
+        android:id="@+id/amount_view"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        />
+
+        <TextView
+            android:id="@+id/tv_fabric"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="面料:"
+            android:textColor="@color/gray5" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_dress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="西服尺寸: 48"
+                android:textColor="@color/gray5" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_pants"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="西裤尺寸: 68"
+            android:textColor="@color/gray5" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥390"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:text="x1"
+                android:textColor="@color/gray5" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_delete"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@color/address_press"
+        android:gravity="center"
+        android:text="删除"
+        android:visibility="gone" />
+
+</RelativeLayout>
